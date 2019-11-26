@@ -1,0 +1,45 @@
+.change-locale-button {
+    height: 34px;
+    width: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $yellow;
+    font-weight: 500;
+    border: 1px solid $main;
+    font-size: 16px;
+}
+
+.burger{
+    height: 34px;
+    width: 50px;
+    border: none;
+    background-color: transparent;
+    margin-left: 10px;
+}
+
+.send-button {
+    position: relative;
+    height: 52px;
+    display: block;
+    button {
+        height: 52px;
+        width: 100%;
+        background-color: $yellow;
+        position: relative;
+        z-index: 5;
+        border: none;
+        font-size: 16px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        border: 1px solid $main;
+        height: 52px;
+        width: 100%;
+        z-index: 1;
+    }
+}

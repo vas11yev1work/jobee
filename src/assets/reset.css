@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+@media (max-width: 1200px) {
+    .container{
+        width: 960px;
+    }
+}
+@media (max-width: 992px) {
+    .container{
+        width: 720px;
+    }
+}
+@media (max-width: 768px) {
+    .container{
+        width: 540px;
+    }
+}
+@media (max-width: 575px) {
+    .container{
+        width: 100%;
+        padding: 0 15px;
+    }
+}
+
+
+html {
+    height: 100%;
+}
+
+body {
+    font-size: 14px;
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+button {
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
