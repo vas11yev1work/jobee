@@ -43,7 +43,7 @@
                 name: '',
                 phone: '',
                 loading: false,
-                sent: true
+                sent: false
             }
         },
         methods: {
