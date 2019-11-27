@@ -177,7 +177,7 @@
         data() {
             return {
                 currentLocale: 'ru',
-                formSent: true,
+                formSent: false,
             }
         }
     }

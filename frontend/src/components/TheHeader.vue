@@ -19,7 +19,7 @@
                 <div class="change-locale">
                     <div class="number-wrap">
                         <img src="../assets/img/phone-icon.svg" alt="icon">
-                        <b>+34 123 123 123</b>
+                        <b>+34 602 449 671</b>
                     </div>
                     <button @click="changeLocale('es')" class="change-locale-button" v-if="currentLocale === 'ru'">ES
                     </button>
@@ -48,7 +48,7 @@
                     </ul>
                     <div class="number-wrap">
                         <img src="../assets/img/phone-icon.svg" alt="icon">
-                        <b>+34 123 123 123</b>
+                        <b>+34 602 449 671</b>
                     </div>
                 </div>
             </div>

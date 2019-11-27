@@ -7,7 +7,7 @@
                         <h3>Jobee</h3>
                         <div class="number-wrap">
                             <img src="../assets/img/phone-icon.svg" alt="icon">
-                            <b>+34 123 123 123</b>
+                            <b>+34 602 449 671</b>
                         </div>
                     </div>
                     <ul class="menu-list">
@@ -26,7 +26,7 @@
                     <div class="left-part">
                         <div class="number-wrap">
                             <img src="../assets/img/phone-icon.svg" alt="icon">
-                            <b>+34 123 123 123</b>
+                            <b>+34 602 449 671</b>
                         </div>
                         <ul class="alt-menu">
                             <li class="alt-menu-item">
