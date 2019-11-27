@@ -36,6 +36,7 @@ export const i18n = new VueI18n({
             retireeText: 'Вы можете работать в удобном графике и получать дополнительный доход. К тому же, работа на свежем воздухе в подходящем для вас темпе – то, что нужно для здоровья',
             allPeople: 'Все, кому нужна подработка и дополнительные деньги',
             allPeopleText: 'Ищете работу? Поиски могут затянуться, а вот деньги нужны уже сейчас. Продолжайте поиски, а в свободное время работайте расклейщиком объявлений и получайте деньги в конце рабочего дня на вашу карту.',
+            sentForm: 'Спасибо за заявку, в ближайшее время мы свяжемся с Вами'
         },
         es: {
             benefits: 'Los beneficios',
@@ -66,6 +67,7 @@ export const i18n = new VueI18n({
             retireeText: 'Puede trabajar con un horario conveniente y obtener ingresos adicionales. Además, trabajar al aire libre a su propio ritmo es lo que necesita para su salud.',
             allPeople: 'Todos los que necesitan trabajo extra y dinero extra',
             allPeopleText: 'Buscando un trabajo? Las búsquedas pueden extenderse, pero ahora necesitamos dinero. Continúe la búsqueda y, en su tiempo libre, trabaje como agente de publicidad y reciba dinero al final del día en su tarjeta.',
+            sentForm: 'Gracias por la aplicación, en un futuro cercano nos pondremos en contacto con usted.'
         },
     },
 });

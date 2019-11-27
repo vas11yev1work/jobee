@@ -1,6 +1,6 @@
 <template>
     <div class="interview-main-wrap">
-        <div class="interview-block">
+        <div class="interview-block" :class="{'sent': sent}">
             <div class="interview-title">
                 <h3>{{ $t('interview') }}</h3>
             </div>
@@ -10,7 +10,14 @@
                     <input :placeholder="this.$t('phone')" type="text" v-model="phone">
                 </div>
                 <div class="send-button">
-                    <button @click="emitForm">{{ $t('signUp') }}</button>
+                    <button @click="emitForm">
+                        <span v-if="!loading">{{ $t('signUp') }}</span>
+                        <img src="../assets/img/loading.svg" alt="loading" v-else>
+                    </button>
+                </div>
+                <div class="form-sent" v-if="sent">
+                    <hr class="line">
+                    <p>{{ $t('sentForm') }}</p>
                 </div>
             </div>
         </div>
@@ -36,6 +43,7 @@
                 name: '',
                 phone: '',
                 loading: false,
+                sent: true
             }
         },
         methods: {
@@ -53,6 +61,7 @@
                     }).then(() => {
                         this.loading = false;
                         this.$root.formSent = true;
+                        this.sent = true;
                     }).catch(() => {
                         this.loading = false;
                     });
@@ -103,10 +112,13 @@
         background-color: $white;
         max-width: 483px;
         width: 100%;
-        padding: 30px 60px 50px 60px;
+        padding: 30px 60px 40px 60px;
         border: 1px solid $main;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         z-index: 1;
+        &.sent{
+            padding-bottom: 20px;
+        }
         .interview-title {
             margin-bottom: 24px;
 
@@ -135,6 +147,19 @@
                     }
                 }
                 margin-bottom: 24px;
+            }
+            .form-sent{
+                .line{
+                    margin-bottom: 10px;
+                    border: none;
+                    border-bottom: 1px solid $main;
+                }
+                margin-top: 20px;
+                p{
+                    text-align: center;
+                    font-weight: 500;
+                    font-size: 16px;
+                }
             }
         }
     }
