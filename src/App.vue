@@ -177,6 +177,7 @@
         data() {
             return {
                 currentLocale: 'ru',
+                formSent: false,
                 peopleItems: [
                     {
                         title: this.$t('students')

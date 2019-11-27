@@ -24,6 +24,7 @@
 </template>
 
 <script>
+    import axios from 'axios';
     export default {
         props: {
             paper: {
@@ -34,12 +35,27 @@
             return {
                 name: '',
                 phone: '',
+                loading: false,
             }
         },
         methods: {
             emitForm() {
                 if (this.name.trim() && this.phone.trim()) {
-                    alert(`${this.name} ${this.phone}`);
+                    if(this.name === "" || this.phone === "" || this.$root.formSent === true){
+                        return;
+                    }
+                    this.loading = true;
+                    axios.post(`/api/sendForm`,{
+                        form:{
+                            'Name': this.name,
+                            'Phone': this.phone,
+                        }
+                    }).then(() => {
+                        this.loading = false;
+                        this.$root.formSent = true;
+                    }).catch(() => {
+                        this.loading = false;
+                    });
                 }
             }
         }
