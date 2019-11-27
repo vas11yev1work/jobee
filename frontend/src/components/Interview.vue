@@ -62,6 +62,7 @@
                         this.loading = false;
                         this.$root.formSent = true;
                         this.sent = true;
+                        this.name = this.phone = '';
                     }).catch(() => {
                         this.loading = false;
                     });
