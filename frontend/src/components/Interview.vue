@@ -63,6 +63,11 @@
                         this.$root.formSent = true;
                         this.sent = true;
                         this.name = this.phone = '';
+                        // eslint-disable-next-line no-undef
+                        gtag('event', 'send', {
+                            'event_category': 'forms'
+                        });
+                        return true;
                     }).catch(() => {
                         this.loading = false;
                     });
