@@ -4,13 +4,13 @@
             <div class="interview-title">
                 <h3>{{ $t('interview') }}</h3>
             </div>
-            <div class="form">
+            <form class="form" @submit="emitForm($event)">
                 <div class="fields">
                     <input :placeholder="this.$t('yourName')" type="text" v-model="name">
                     <input :placeholder="this.$t('phone')" type="text" v-model="phone">
                 </div>
                 <div class="send-button">
-                    <button @click="emitForm">
+                    <button type="submit">
                         <span v-if="!loading">{{ $t('signUp') }}</span>
                         <img src="../assets/img/loading.svg" alt="loading" v-else>
                     </button>
@@ -19,7 +19,7 @@
                     <hr class="line">
                     <p>{{ $t('sentForm') }}</p>
                 </div>
-            </div>
+            </form>
         </div>
         <div class="papers" v-if="paper">
             <img src="../assets/img/paper.svg" alt="paper">
@@ -47,7 +47,8 @@
             }
         },
         methods: {
-            emitForm() {
+            emitForm(e) {
+                e.preventDefault();
                 if (this.name.trim() && this.phone.trim()) {
                     if(this.name === "" || this.phone === "" || this.$root.formSent === true){
                         return;
