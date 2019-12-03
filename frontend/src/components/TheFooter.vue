@@ -30,10 +30,10 @@
 <!--                        </div>-->
                         <ul class="alt-menu">
                             <li class="alt-menu-item">
-                                <a href="#">Политика конфиденциальности</a>
+                                <a href="#">{{ $t('policy') }}</a>
                             </li>
                             <li class="alt-menu-item">
-                                <a href="#">Правила пользования</a>
+                                <a href="#">{{ $t('rules') }}</a>
                             </li>
                         </ul>
                     </div>

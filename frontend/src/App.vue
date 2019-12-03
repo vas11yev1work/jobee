@@ -30,6 +30,64 @@
                     </div>
                 </div>
             </section>
+            <section class="how-to-make">
+                <div class="container">
+                    <div class="how-to-make-wrap">
+                        <div class="htm-title">
+                            <h2>{{ $t('htm') }}</h2>
+                        </div>
+                        <div class="htm-wrap">
+                            <div class="htm-image">
+                                <img src="./assets/img/man.svg" alt="man">
+                            </div>
+                            <div class="htm-text">
+                                <ul class="steps-list">
+                                    <li class="step-item">
+                                        <div class="step-index">
+                                            <span>1</span>
+                                        </div>
+                                        <div class="text">
+                                            <p>{{ $t('step1') }} <b>{{ $t('step1prefix') }}</b></p>
+                                        </div>
+                                    </li>
+                                    <li class="step-item">
+                                        <div class="step-index">
+                                            <span>2</span>
+                                        </div>
+                                        <div class="text">
+                                            <p>{{ $t('step2') }} <b>{{ $t('step2prefix') }}</b></p>
+                                        </div>
+                                    </li>
+                                    <li class="step-item">
+                                        <div class="step-index">
+                                            <span>3</span>
+                                        </div>
+                                        <div class="text">
+                                            <p>{{ $t('step3') }} <b>{{ $t('step3prefix') }}</b></p>
+                                        </div>
+                                    </li>
+                                    <li class="step-item">
+                                        <div class="step-index">
+                                            <span>4</span>
+                                        </div>
+                                        <div class="text">
+                                            <p>{{ $t('step4') }} <b>{{ $t('step4prefix') }}</b></p>
+                                        </div>
+                                    </li>
+                                    <li class="step-item">
+                                        <div class="step-index">
+                                            <span>5</span>
+                                        </div>
+                                        <div class="text">
+                                            <p>{{ $t('step5') }} <b>{{ $t('step5prefix') }}</b></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section id="benefits" class="benefits-section">
                 <div class="container">
                     <div class="benefits-wrap">
@@ -206,6 +264,75 @@
 
     .main-wrap {
         main {
+            .how-to-make {
+                padding: 30px 0;
+                background-color: $white;
+                .how-to-make-wrap{
+                    .htm-title{
+                        text-align: center;
+                        margin-bottom: 30px;
+                        h2{
+                            font-size: 36px;
+                        }
+                    }
+                    .htm-wrap{
+                        display: flex;
+                        align-items: center;
+                        .htm-image,
+                        .htm-text{
+                            width: 50%;
+                        }
+                        .htm-image{
+                            img{
+                                width: 90%;
+                            }
+                        }
+                        .htm-text{
+                            .steps-list{
+                                position: relative;
+                                &::before{
+                                    content: '';
+                                    position: absolute;
+                                    height: 90%;
+                                    width: 1px;
+                                    background-color: $black;
+                                    top: 15px;
+                                    left: 24px;
+                                    z-index: 0;
+                                }
+                                .step-item{
+                                    display: flex;
+                                    align-items: center;
+                                    margin-bottom: 50px;
+                                    &:last-child{
+                                        margin-bottom: 0;
+                                    }
+                                    .step-index{
+                                        z-index: 99;
+                                        margin-right: 20px;
+                                        height: 48px;
+                                        width: 48px;
+                                        background-color: $yellow;
+                                        border-radius: 50%;
+                                        border: 1px solid $black;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        font-size: 24px;
+                                        min-width: 48px;
+                                        font-weight: 700;
+                                    }
+                                    .text{
+                                        p{
+                                            font-size: 20px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
             .main-section {
                 background-image: url('./assets/img/main-screen.png');
                 height: 520px;
