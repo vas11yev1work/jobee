@@ -2,7 +2,7 @@
     <div class="interview-main-wrap">
         <div class="interview-block" :class="{'sent': sent}">
             <div class="interview-title">
-                <h3>{{ $t('interview') }}</h3>
+                <h3>{{ $t('interview') }}.</h3>
             </div>
             <form class="form" @submit="emitForm($event)">
                 <div class="fields">
@@ -64,7 +64,7 @@
                         this.$root.formSent = true;
                         this.sent = true;
                         this.name = this.phone = '';
-                        this.$gtag.event('event', 'send', {
+                        this.$gtag.event('send', {
                             'event_category': 'forms'
                         }); return true;
                     }).catch(() => {
