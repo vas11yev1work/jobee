@@ -5,10 +5,10 @@
                 <div class="main-footer">
                     <div class="logo">
                         <h3>Jobee</h3>
-<!--                        <div class="number-wrap">-->
-<!--                            <img src="../assets/img/phone-icon.svg" alt="icon">-->
-<!--                            <b>+34 602 449 671</b>-->
-<!--                        </div>-->
+                        <div class="number-wrap">
+                            <img src="../assets/img/phone-icon.svg" alt="icon">
+                            <b><a href="tel:+34602449671" class="zphone">+34 602 449 671</a></b>
+                        </div>
                     </div>
                     <ul class="menu-list">
                         <li class="menu-item">
@@ -24,10 +24,10 @@
                 </div>
                 <div class="alt-footer">
                     <div class="left-part">
-<!--                        <div class="number-wrap">-->
-<!--                            <img src="../assets/img/phone-icon.svg" alt="icon">-->
-<!--                            <b>+34 602 449 671</b>-->
-<!--                        </div>-->
+                        <div class="number-wrap">
+                            <img src="../assets/img/phone-icon.svg" alt="icon">
+                            <b><a href="tel:+34602449671" class="zphone">+34 602 449 671</a></b>
+                        </div>
                         <ul class="alt-menu">
                             <li class="alt-menu-item">
                                 <a href="#">{{ $t('policy') }}</a>

@@ -17,10 +17,10 @@
                     </ul>
                 </div>
                 <div class="change-locale">
-<!--                    <div class="number-wrap">-->
-<!--                        <img src="../assets/img/phone-icon.svg" alt="icon">-->
-<!--                        <b>+34 602 449 671</b>-->
-<!--                    </div>-->
+                    <div class="number-wrap">
+                        <img src="../assets/img/phone-icon.svg" alt="icon">
+                        <b><a href="tel:+34602449671" class="zphone">+34 602 449 671</a></b>
+                    </div>
                     <button @click="changeLocale('es')" class="change-locale-button" v-if="currentLocale === 'ru'">ES
                     </button>
                     <button @click="changeLocale('ru')" class="change-locale-button" v-if="currentLocale === 'es'">RU
@@ -46,10 +46,10 @@
                             <a href="#whoCanWork">{{ $t('whoCanWork') }}</a>
                         </li>
                     </ul>
-<!--                    <div class="number-wrap">-->
-<!--                        <img src="../assets/img/phone-icon.svg" alt="icon">-->
-<!--                        <b>+34 602 449 671</b>-->
-<!--                    </div>-->
+                    <div class="number-wrap">
+                        <img src="../assets/img/phone-icon.svg" alt="icon">
+                        <b><a href="tel:+34602449671" class="zphone">+34 602 449 671</a></b>
+                    </div>
                 </div>
             </div>
         </div>
