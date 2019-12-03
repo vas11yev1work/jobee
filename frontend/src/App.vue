@@ -239,7 +239,12 @@
             }
         },
         mounted() {
-
+            setTimeout(() => {
+                this.$gtag.event('Без отказов', {
+                    'event_category': 'Без отказов',
+                    'event_label': 'Сеанс без отказов'
+                })
+            }, 15000)
         }
     }
 </script>

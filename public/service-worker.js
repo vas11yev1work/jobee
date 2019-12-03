@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.84325ea6d5abce3d53f2f2657289dc24.js"
+  "/precache-manifest.86dbc8adc2fb8880c886cea0a7227d14.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "jobee"});

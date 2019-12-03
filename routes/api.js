@@ -5,7 +5,7 @@ const router = express.Router();
 
 const mailRate = new RateLimit({
   windowMs: 60 * 60 * 1000,
-  max: 3,
+  max: 30,
   message: 'Too many mails sent'
 });
 
