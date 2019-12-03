@@ -30,7 +30,7 @@
                     </div>
                 </div>
             </section>
-            <section class="how-to-make">
+            <!-- <section class="how-to-make">
                 <div class="container">
                     <div class="how-to-make-wrap">
                         <div class="htm-title">
@@ -87,7 +87,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <section id="benefits" class="benefits-section">
                 <div class="container">
                     <div class="benefits-wrap">
