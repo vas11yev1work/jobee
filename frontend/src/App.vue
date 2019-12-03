@@ -285,6 +285,27 @@
                     .htm-wrap{
                         display: flex;
                         align-items: center;
+                        @media (max-width: 768px) {
+                            flex-direction: column;
+                            .htm-image,
+                            .htm-text{
+                                width: 100% !important;
+                            }
+                            .htm-image{
+                                margin-bottom: 30px;
+                                img{
+                                    width: 100% !important;
+                                }
+                            }
+                            .htm-text{
+                                .steps-list{
+                                    &::before{
+                                        top: 48px !important;
+                                        height: 80% !important;
+                                    }
+                                }
+                            }
+                        }
                         .htm-image,
                         .htm-text{
                             width: 50%;
@@ -295,6 +316,7 @@
                             }
                         }
                         .htm-text{
+                            font-family: 'Montserrat', sans-serif;
                             .steps-list{
                                 position: relative;
                                 &::before{
