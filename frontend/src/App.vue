@@ -237,6 +237,9 @@
                 currentLocale: 'ru',
                 formSent: false,
             }
+        },
+        mounted() {
+
         }
     }
 </script>
