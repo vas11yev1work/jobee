@@ -128,6 +128,9 @@
                     }
                     b{
                         font-size: 16px;
+                        a{
+                            color: $black;
+                        }
                     }
                 }
                 .mobile{
