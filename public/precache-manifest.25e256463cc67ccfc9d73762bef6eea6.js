@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0a945d212abdf91b144c",
+    "revision": "2d4023fe6e08249532cb",
     "url": "/css/app.acce9953.css"
   },
   {
@@ -8,12 +8,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/css/chunk-0bcea7c0.d6bdb411.css"
   },
   {
-    "revision": "19f75377c0780e719f7c",
-    "url": "/css/chunk-3721dfbb.a680c025.css"
+    "revision": "88662eb90b332f2be1d7",
+    "url": "/css/chunk-5a8e7331.8a7dcd84.css"
   },
   {
-    "revision": "3384a95e159e4b4671f4",
-    "url": "/css/chunk-ced58d9c.6cf345db.css"
+    "revision": "1497021a444fc5be78da",
+    "url": "/css/chunk-7a148178.ae45fa68.css"
   },
   {
     "revision": "b87d05d88f1aaef80c2db2168735fad9",
@@ -48,6 +48,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/man.33d06240.svg"
   },
   {
+    "revision": "a2afe032ddefc392cc6ae228b895dd0a",
+    "url": "/img/map.a2afe032.png"
+  },
+  {
     "revision": "8fb52382dffcdac63999196d70737864",
     "url": "/img/money.8fb52382.svg"
   },
@@ -72,24 +76,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/wall.e57bae48.png"
   },
   {
-    "revision": "b1469f187b628570f549aeacc3773c4f",
+    "revision": "a0a109bf8111d07f4ec507c0ac1fcd6d",
     "url": "/index.html"
   },
   {
-    "revision": "0a945d212abdf91b144c",
-    "url": "/js/app.a62ea8de.js"
+    "revision": "2d4023fe6e08249532cb",
+    "url": "/js/app.0e111198.js"
   },
   {
     "revision": "c174a351a4a14fd4c984",
     "url": "/js/chunk-0bcea7c0.85e35f95.js"
   },
   {
-    "revision": "19f75377c0780e719f7c",
-    "url": "/js/chunk-3721dfbb.290bcd67.js"
+    "revision": "88662eb90b332f2be1d7",
+    "url": "/js/chunk-5a8e7331.a149dcd6.js"
   },
   {
-    "revision": "3384a95e159e4b4671f4",
-    "url": "/js/chunk-ced58d9c.a37e5ad1.js"
+    "revision": "1497021a444fc5be78da",
+    "url": "/js/chunk-7a148178.09adf6e3.js"
   },
   {
     "revision": "1dddcaa0c65871e414ac",
