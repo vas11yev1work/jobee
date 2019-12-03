@@ -235,7 +235,6 @@
         data() {
             return {
                 currentLocale: 'ru',
-                formSent: false,
             }
         },
         mounted() {

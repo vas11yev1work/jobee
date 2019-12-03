@@ -2,7 +2,7 @@
     <div class="interview-main-wrap">
         <div class="interview-block" :class="{'sent': sent}">
             <div class="interview-title">
-                <h3>{{ $t('interview') }}.</h3>
+                <h3>{{ $t('interview') }}</h3>
             </div>
             <form class="form" @submit="emitForm($event)">
                 <div class="fields">
@@ -50,7 +50,7 @@
             emitForm(e) {
                 e.preventDefault();
                 if (this.name.trim() && this.phone.trim()) {
-                    if(this.name === "" || this.phone === "" || this.$root.formSent === true){
+                    if(this.name === "" || this.phone === ""){
                         return;
                     }
                     this.loading = true;
@@ -61,7 +61,6 @@
                         }
                     }).then(() => {
                         this.loading = false;
-                        this.$root.formSent = true;
                         this.sent = true;
                         this.name = this.phone = '';
                         this.$gtag.event('send', {
