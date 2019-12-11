@@ -21,9 +21,9 @@
                         <img src="../assets/img/phone-icon.svg" alt="icon">
                         <b><a href="tel:+34602449671" class="zphone">+34 602 449 671</a></b>
                     </div>
-                    <button @click="changeLocale('es')" class="change-locale-button" v-if="currentLocale === 'ru'">ES
+                    <button @click="changeLocale('es')" class="change-locale-button" v-if="$i18n.locale === 'ru'">ES
                     </button>
-                    <button @click="changeLocale('ru')" class="change-locale-button" v-if="currentLocale === 'es'">RU
+                    <button @click="changeLocale('ru')" class="change-locale-button" v-if="$i18n.locale === 'es'">RU
                     </button>
                     <button class="burger mobile" @click="mobile = !mobile">
                         <img src="../assets/img/burger.svg" alt="burger" v-if="!mobile">
@@ -60,14 +60,12 @@
     export default {
         data() {
             return {
-                currentLocale: this.$i18n.locale,
                 mobile: false,
             }
         },
         methods: {
             changeLocale(locale) {
                 this.$i18n.locale = locale;
-                this.currentLocale = locale;
             }
         },
     }

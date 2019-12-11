@@ -9,6 +9,7 @@
                             <img src="../assets/img/phone-icon.svg" alt="icon">
                             <b><a href="tel:+34602449671" class="zphone">+34 602 449 671</a></b>
                         </div>
+                        <h4 class="work-time">9:00 - 13:00</h4>
                     </div>
                     <div class="menus-wrap">
                         <ul class="menu-list">
@@ -32,16 +33,20 @@
                         </ul>
                     </div>
                     <div class="change-locale">
-                        <button @click="changeLocale('es')" class="change-locale-button" v-if="currentLocale === 'ru'">ES
+                        <button @click="changeLocale('es')" class="change-locale-button" v-if="$i18n.locale === 'ru'">ES
                         </button>
-                        <button @click="changeLocale('ru')" class="change-locale-button" v-if="currentLocale === 'es'">RU
+                        <button @click="changeLocale('ru')" class="change-locale-button" v-if="$i18n.locale === 'es'">RU
                         </button>
                     </div>
                 </div>
                 <div class="alt-footer">
-                    <a href="https://goo.gl/maps/tfuR9X1z7tgg4qq19" target="_blank">
+                    <a href="https://www.google.ru/maps/search/C.+RONDA+SANT+PERE+40,+planta+4%C2%B01,+Barcelona+08010./@41.389925,2.17358,17z/data=!3m1!4b1" target="_blank">
                         <img src="../assets/img/map.png" alt="map">
                     </a>
+                    <div class="enter">
+                        <img src="../assets/img/enter.png" alt="enter">
+                        <h3>{{ $t('enter') }}</h3>
+                    </div>
                 </div>
             </div>
         </div>
@@ -50,15 +55,9 @@
 
 <script>
     export default {
-        data() {
-            return {
-                currentLocale: this.$i18n.locale
-            }
-        },
         methods: {
             changeLocale(locale) {
                 this.$i18n.locale = locale;
-                this.currentLocale = locale;
             }
         },
     }
@@ -72,8 +71,12 @@
         font-family: 'Montserrat', sans-serif;
     }
 
+
     footer{
         margin-bottom: 40px;
+        .work-time{
+            font-size: 16px;
+        }
         .footer{
             display: flex;
             justify-content: space-between;
@@ -174,6 +177,9 @@
                         display: flex;
                         align-items: center;
                         margin-right: 50px;
+                        @media (max-width: 992px) {
+                            margin-bottom: 10px;    
+                        }
                         img{
                             margin-right: 7px;
                         }
@@ -209,13 +215,32 @@
                 }
             }
             .alt-footer{
+                display: flex;
+                align-items: center;
+                .enter{
+                    transform: translateY(-1px);
+                    img{
+                        display: flex;
+                    }
+                    h3{
+                        background-color: #FFFFFF;
+                        border: 1px solid #000000;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 30px;
+                        border-top: none;
+                        font-size: 14px;
+                    }
+                }
                 @media (max-width: 1200px) {
                     a{
-                        max-width: 460px !important;
+                        max-width: 390px !important;
                     }
                 }
                 a{
-                    max-width: 540px;
+                    max-width: 450px;
+                    margin-right: 10px;
                     display: block;
                     img{
                         height: 100%;

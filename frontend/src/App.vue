@@ -212,6 +212,16 @@
                     </div>
                 </div>
             </section>
+            <section class="job-section">
+                <div class="container">
+                    <div class="job-video">
+                        <h3>В чем заключается работа?</h3>
+                        <video controls="" autoplay="" name="media">
+                            <source src="./assets/film.mp4" type="video/mp4">
+                            </video>
+                    </div>
+                </div>
+            </section>
             <section class="wall-section">
                 <div class="container">
                     <div class="wall-wrap">
@@ -234,7 +244,7 @@
         },
         data() {
             return {
-                currentLocale: 'ru',
+                currentLocale: 'es',
             }
         },
         mounted() {
@@ -271,6 +281,26 @@
 
     .main-wrap {
         main {
+            .job-section{
+                background-color: #FFFFFF;
+                padding: 60px 0;
+                .job-video{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    h3{
+                        margin-bottom: 20px;
+                        font-size: 36px;
+                        text-align: center;
+                    }
+                    video{
+                        width: 70%;
+                        @media (max-width: 768px) {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
             .how-to-make {
                 padding: 30px 0;
                 background-color: $white;
