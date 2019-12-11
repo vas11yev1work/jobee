@@ -7,7 +7,7 @@
                         <h3>Jobee</h3>
                         <div class="number-wrap">
                             <img src="../assets/img/phone-icon.svg" alt="icon">
-                            <b><a href="tel:+34602449671" class="zphone">+34 602 449 671</a></b>
+                            <b><a href="tel:+34937376214" class="zphone">+34 937 376 214</a></b>
                         </div>
                         <h4 class="work-time">9:00 - 13:00</h4>
                     </div>

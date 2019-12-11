@@ -19,7 +19,7 @@
                 <div class="change-locale">
                     <div class="number-wrap">
                         <img src="../assets/img/phone-icon.svg" alt="icon">
-                        <b><a href="tel:+34602449671" class="zphone">+34 602 449 671</a></b>
+                        <b><a href="tel:+34937376214" class="zphone">+34 937 376 214</a></b>
                     </div>
                     <button @click="changeLocale('es')" class="change-locale-button" v-if="$i18n.locale === 'ru'">ES
                     </button>
@@ -48,7 +48,7 @@
                     </ul>
                     <div class="number-wrap">
                         <img src="../assets/img/phone-icon.svg" alt="icon">
-                        <b><a href="tel:+34602449671" class="zphone">+34 602 449 671</a></b>
+                        <b><a href="tel:+34937376214" class="zphone">+34 973 376 214</a></b>
                     </div>
                 </div>
             </div>
