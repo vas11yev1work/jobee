@@ -215,7 +215,7 @@
             <section class="job-section">
                 <div class="container">
                     <div class="job-video">
-                        <h3>В чем заключается работа?</h3>
+                        <h3>{{ $t('workVideo') }}</h3>
                         <video controls="" autoplay="" name="media">
                             <source src="./assets/film.mp4" type="video/mp4">
                             </video>

@@ -40,12 +40,27 @@
                     </div>
                 </div>
                 <div class="alt-footer">
-                    <a href="https://www.google.ru/maps/search/C.+RONDA+SANT+PERE+40,+planta+4%C2%B01,+Barcelona+08010./@41.389925,2.17358,17z/data=!3m1!4b1" target="_blank">
+                    <a class="map-link" href="https://www.google.ru/maps/search/C.+RONDA+SANT+PERE+40,+planta+4%C2%B01,+Barcelona+08010./@41.389925,2.17358,17z/data=!3m1!4b1" target="_blank">
                         <img src="../assets/img/map.png" alt="map">
+                        <div class="place-block">
+                            <p>C. Ronda Sant Pere 40, planta 4°1, Barcelona 08010</p>
+                        </div>
                     </a>
                     <div class="enter">
                         <img src="../assets/img/enter.png" alt="enter">
                         <h3>{{ $t('enter') }}</h3>
+                    </div>
+                    <div class="mobile-ftr">
+                        <a class="map-link" href="https://www.google.ru/maps/search/C.+RONDA+SANT+PERE+40,+planta+4%C2%B01,+Barcelona+08010./@41.389925,2.17358,17z/data=!3m1!4b1" target="_blank">
+                            <img src="../assets/img/map.png" alt="map">
+                        </a>
+                        <div class="mb-enter">
+                            <div class="mb-place-block">
+                                <p>C. Ronda Sant Pere 40, planta 4°1, Barcelona 08010</p>
+                                <h3>{{ $t('enter') }}</h3>
+                            </div>
+                            <img src="../assets/img/enter.png" alt="enter">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -80,7 +95,6 @@
         .footer{
             display: flex;
             justify-content: space-between;
-            align-items: center;
             @media (max-width: 768px){
                 flex-direction: column;
                 align-items: flex-start;
@@ -154,21 +168,21 @@
                         h3{
                             margin-bottom: 10px;
                         }
-                    }     
+                    }
                     @media (max-width: 575px) {
                         flex-direction: column !important;
                         align-items: flex-start !important;
                         h3{
                             margin-bottom: 10px;
                         }
-                    }   
+                    }
                     @media (max-width: 768px){
                         flex-direction: initial;
                         align-items: center;
                         h3{
                             margin-bottom: 10px;
                         }
-                    }                    
+                    }
                     h3{
                         margin-right: 20px;
                         font-size: 24px;
@@ -178,7 +192,7 @@
                         align-items: center;
                         margin-right: 50px;
                         @media (max-width: 992px) {
-                            margin-bottom: 10px;    
+                            margin-bottom: 10px;
                         }
                         img{
                             margin-right: 7px;
@@ -194,7 +208,7 @@
                 .menu-list {
                     display: flex;
                     flex-direction: column;
-                    margin-right: 60px;
+                    margin-right: 40px;
                     @media (max-width: 575px) {
                         margin-bottom: 10px;
                     }
@@ -216,11 +230,73 @@
             }
             .alt-footer{
                 display: flex;
-                align-items: center;
+                .mobile-ftr{
+                    display: none;
+                    a{
+                        display: block;
+                        width: 100% !important;
+                        height: auto !important;
+                        margin-right: 0;
+                        margin-left: 0;
+                        img{
+                            display: flex;
+                        }
+
+                        margin-bottom: 15px;
+                    }
+                    .mb-enter{
+                        display: flex;
+                        .mb-place-block{
+                            width: 50%;
+                            background-color: #FFFFFF;
+                            padding: 10px;
+                            display: flex;
+                            flex-direction: column;
+                            border: 1px solid black;
+                            font-size: 16px;
+                            justify-content: space-between;
+                        }
+                        img{
+                            width: 50%;
+                            height: 180px;
+                            object-fit: cover;
+                            border: 1px solid black;
+                        }
+                    }
+                }
+                @media (max-width: 575px) {
+                    .map-link, .enter{
+                        display: none;
+                    }
+                    .mobile-ftr{
+                        display: block;
+                    }
+                }
                 .enter{
                     transform: translateY(-1px);
+                    @media (max-width: 1200px) {
+                        height: 150px !important;
+                        img{
+                            height: 140px;
+                        }
+                    }
+                    @media (max-width: 992px) {
+                        height: 120px !important;
+                        img{
+                            height: 112px;
+                        }
+                        h3{
+                            font-size: 12px !important;
+                        }
+                    }
+                    @media (max-width: 768px){
+                        img{
+                            height: 140px;
+                        }
+                    }
                     img{
                         display: flex;
+                        object-fit: cover;
                     }
                     h3{
                         background-color: #FFFFFF;
@@ -235,16 +311,41 @@
                 }
                 @media (max-width: 1200px) {
                     a{
-                        max-width: 390px !important;
+                        height: 168px !important;
+                        width: 378px;
+                    }
+                }
+                @media (max-width: 992px) {
+                    a{
+                        height: 140px !important;
+                        width: 315px;
+                    }
+                }
+                @media (max-width: 768px) {
+                    a{
+                        height: 168px !important;
+                        width: 378px;
                     }
                 }
                 a{
                     max-width: 450px;
+                    height: 200px;
                     margin-right: 10px;
                     display: block;
+                    position: relative;
                     img{
                         height: 100%;
                         width: 100%;
+                        object-fit: cover;
+                    }
+                    .place-block{
+                        position: absolute;
+                        bottom: 13px;
+                        left: 10px;
+                        max-width: 220px;
+                        background-color: #FFFFFF;
+                        border: 1px solid #000000;
+                        padding: 8px;
                     }
                 }
                 @media (max-width: 768px){

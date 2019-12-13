@@ -50,7 +50,8 @@ export const i18n = new VueI18n({
             step4prefix: ' 48 евро в день',
             step5: 'За месяц работы, работая только в рабочие дни Вы получите',
             step5prefix: ' более 1000 евро',
-            enter: 'Вход со двора'
+            enter: 'Дверь для входа',
+            workVideo: 'В чем заключается работа?'
         },
         es: {
             benefits: 'Los beneficios',
@@ -95,7 +96,8 @@ export const i18n = new VueI18n({
             step4prefix: ' 48 euros',
             step5: 'Por un mes de trabajo trabajando hornada laboral de lunes a viernes ganará',
             step5prefix: ' más de 1000 euros',
-            enter: 'Entrada desde el patio'
+            enter: 'Puerta de entrada',
+            workVideo: '¿En qué consiste el trabajo?'
         },
     },
 });
